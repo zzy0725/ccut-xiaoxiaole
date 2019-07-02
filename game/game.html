@@ -1,1 +1,280 @@
-q
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>CCUT 消消乐</title>
+
+    <script type="text/javascript" src="JQuery.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="css.css" />
+    <link type="text/css" rel="stylesheet" href="human_for_game.css" />
+
+</head>
+
+<body>
+
+    <!--这里是两个按钮-->
+    <script type="text/javascript" src="button.js"></script>
+    <button class="gameButton1" id="jsbutton1" onclick="Button1Click()">Restart Game</button></a>
+    <button class="gameButton2" id="jsbutton2" onclick="Button2Click()">I Love It !</button></a>
+
+
+    <!--这是那个计时器-->
+    <div class="game_time" id="timer">
+        <div class="hold">
+            <div class="pie pie1"></div>
+        </div>
+        <div class="hold">
+            <div class="pie pie2"></div>
+        </div>
+        <div class="bg"> </div>
+        <div class="time"></div>
+    </div>
+    <script type="text/javascript">
+        countDown();
+    </script>
+
+
+    <!--消消乐是以表格形式展现的。以下是第一个表格-->
+
+    <table border="0px" class="table0" id="tab0">
+        <trtext-align="center">
+            <td>
+                <button type="button" class="btn" id="btn01">
+						<img src="./img/1.PNG" width="100px" height="100px" id="tabimg1" class="tabimg" onclick="checkAction01()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn02">
+						<img src="./img/2.PNG" width="100px" height="100px" id="tabimg2" class="tabimg" onclick="checkAction02()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn03">
+						<img src="./img/3.PNG" width="100px" height="100px" id="tabimg3" class="tabimg" onclick="checkAction03()">
+				</td>
+			<tr>
+				<td>
+					<button type="button" class="btn" id="btn04">
+						<img src="./img/4.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction04()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn05">
+						<img src="./img/5.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction05()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn06">
+						<img src="./img/6.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction06()">
+				</td>
+			<tr>
+				<td>
+					<button type="button" class="btn" id="btn07">
+						<img src="./img/7.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction07()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn08">
+						<img src="./img/8.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction08()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn09">
+						<img src="./img/9.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction09()">
+				</td>
+			<tr>
+				<td>
+					<button type="button" class="btn" id="btn10">
+						<img src="./img/10.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction10()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn11">
+						<img src="./img/11.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction11()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn12">
+						<img src="./img/12.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction12()">
+				</td>
+			<tr>
+				<td>
+					<button type="button" class="btn" id="btn13">
+						<img src="./img/13.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction13()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn14">
+						<img src="./img/14.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction14()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn15">
+						<img src="./img/15.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction15()">
+				</td>
+			<tr>
+				<td>
+					<button type="button" class="btn" id="btn16">
+						<img src="./img/16.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction16()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn17">
+						<img src="./img/17.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction17()">
+				</td>
+				<td>
+					<button type="button" class="btn" id="btn18">
+						<img src="./img/18.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction18()">
+				</td>
+		</table>
+		<!--以上是那个3x6第一个表格-->
+		<!--以下是那个3x6第二个表格-->
+		<table border="0px" class="table1" id="tab1">
+			<trtext-align="center">
+				<td>
+					<button type="button" class="btn" id="btn19">
+							<img src="./img/19.PNG" width="100px" height="100px" id="tabimg1" class="tabimg" onclick="checkAction19()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn20">
+							<img src="./img/20.PNG" width="100px" height="100px" id="tabimg2" class="tabimg" onclick="checkAction20()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn21">
+							<img src="./img/21.PNG" width="100px" height="100px" id="tabimg3" class="tabimg" onclick="checkAction21()">
+					</td>
+				<tr>
+					<td>
+						<button type="button" class="btn" id="btn22">
+							<img src="./img/22.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction22()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn23">
+							<img src="./img/23.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction23()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn24">
+							<img src="./img/24.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction24()">
+					</td>
+				<tr>
+					<td>
+						<button type="button" class="btn" id="btn25">
+							<img src="./img/25.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction25()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn26">
+							<img src="./img/26.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction26()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn27">
+							<img src="./img/27.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction27()">
+					</td>
+				<tr>
+					<td>
+						<button type="button" class="btn" id="btn28">
+							<img src="./img/28.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction28()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn29">
+							<img src="./img/29.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction29()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn30">
+							<img src="./img/30.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction30()">
+					</td>
+				<tr>
+					<td>
+						<button type="button" class="btn" id="btn31">
+							<img src="./img/31.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction31()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn32">
+							<img src="./img/32.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction32()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn33">
+							<img src="./img/33.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction33()">
+					</td>
+				<tr>
+					<td>
+						<button type="button" class="btn" id="btn34">
+							<img src="./img/34.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction34()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn35">
+							<img src="./img/35.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction35()">
+					</td>
+					<td>
+						<button type="button" class="btn" id="btn36">
+							<img src="./img/36.PNG" width="100px" height="100px" class="tabimg" onclick="checkAction36()">
+					</td>
+			</table>
+			<!--以下是那个3x6第二个表格-->
+
+
+		<!--以下是那个小头，human_for_game.css控制-->
+        <div class="wrapper" id="wrapper">
+            <div class="border-circle" id="one"></div>
+            <div class="border-circle" id="two"></div>
+            <div class="background-circle">
+                <div class="triangle-light"></div>
+                <div class="body"></div>
+                <span class="shirt-text">I</span>
+                <span class="shirt-text">♥</span>
+                <span class="shirt-text">C</span>
+                <span class="shirt-text">C</span>
+                <span class="shirt-text">U</span>
+                <span class="shirt-text">T</span>
+                <div class="triangle-dark"></div>
+            </div>
+            <div class="head">
+                <div class="ear" id="left"></div>
+                <div class="ear" id="right"></div>
+                <div class="hair-main">
+                    <div class="sideburn" id="left"></div>
+                    <div class="sideburn" id="right"></div>
+                    <div class="hair-top"></div>
+                </div>
+                <div class="face">
+                    <div class="hair-bottom"></div>
+                    <div class="nose"></div>
+                    <div class="eye-shadow" id="left">
+                        <div class="eyebrow"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="eye-shadow" id="right">
+                        <div class="eyebrow"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <div class="mouth"></div>
+                    <div class="shadow-wrapper">
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+            </div>
+            <span class="music-note" id="one">♥</span>
+            <span class="music-note" id="two">♥</span>
+        </div>
+		<!--以上是那个小头，human_for_game.css控制-->
+
+
+		<!--这是对话框，图片-->
+		<img src="./img/success.png" width=400px height=300px class="successimg" id="successimg">
+		<img src="./img/timeout.png" width=400px height=300px class="timeoutimg" id="timeoutimg">
+
+		<!--这些必须有，但不知道有没有用-->
+		<canvas class="canvas"></canvas>
+		<div class="help" hidden="hidden"></div>
+		<div class="ui">
+			<input class="ui-input" type="text" hidden="hidden" />
+			<span class="ui-return"></span>
+		</div>
+		<div class="overlay">
+			<div class="tabs">
+				<div class="tabs-labels">
+					<span class="tabs-label" hidden="hidden"></span>
+				</div>
+				<div class="tabs-panels">
+					<ul class="tabs-panel commands"></ul>
+				</div>
+			</div>
+		</div>
+		<!--这些必须有，但不知道有没有用-->
+
+		<!--这些js必须要在这里引用-->
+		<script type="text/javascript" src="atom.js"></script>
+		<script type="text/javascript" src="table.js"></script>
+		<!--这些js必须要在这里引用-->
+	</body>
+</html>

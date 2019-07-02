@@ -1,0 +1,774 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+[hidden],
+template {
+    display: none
+}
+
+a {
+    background: transparent
+}
+
+a:active,
+a:hover {
+    outline: 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-style: italic
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+pre {
+    overflow: auto
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+input {
+    line-height: normal
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+fieldset {
+    border: 1px solid #C0C0C0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto
+}
+
+optgroup {
+    font-weight: bold
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+
+/*以上这些我也不知道干啥的，反正有error就怨她*/
+
+body {
+    font-family: "Avenir", "Helvetica Neue", Helvetica, Arial, Consolas, sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: #79a8ae;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5em;
+    position: relative;
+    left: 0.1%;
+    top: 0.2%;
+    width: auto;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+/*以上general配置*/
+
+
+/*消消乐是以表格形式展现的。以下是第一个表格css*/
+
+table,
+.table0 {
+    position: fixed;
+    left: 8%;
+    top: 3%;
+    text-align: center;
+    width: 25%;
+    height: 89%;
+    border-radius: 20px;
+    animation: move 0.5s 1 linear;
+    opacity: 0.85;
+    background: rgba(165, 222, 228, 0.7)
+}
+
+.tabimg {
+    border-radius: 20px;
+    position: relative;
+}
+
+@keyframes move {
+    /*起点省略采用的就是初始状态*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.85;
+    }
+}
+
+
+/*以下是第二个表格css*/
+
+.table1 {
+    position: fixed;
+    left: 36%;
+    top: 3%;
+    text-align: center;
+    width: 25%;
+    height: 89%;
+    border-radius: 20px;
+    animation: move 0.5s 1 linear;
+    opacity: 0.85;
+    background: rgba(165, 222, 228, 0.7)
+}
+
+.tabimg {
+    border-radius: 20px;
+    position: relative;
+}
+
+@keyframes move {
+    /*起点省略采用的就是初始状态*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.85;
+    }
+}
+
+
+/*以上表格style和animation*/
+
+
+/*以下是atom.js所属的样式表*/
+
+​ h1 {
+    color: #111;
+    margin: 0 0 12px 0;
+    font-size: 24px;
+    line-height: 1.5em;
+}
+
+p {
+    margin: 0 0 10x 0;
+}
+
+a {
+    color: #888;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+}
+
+a:hover {
+    border-bottom-color: #888;
+}
+
+body,
+.overlay {
+    -webkit-perspective: 1000;
+    -webkit-perspective-origin-y: 25%;
+}
+
+.body--ready {
+    /*这里是背景颜色渐变*/
+    background: -webkit-linear-gradient(top, rgb(44, 218, 123) 0%, rgb(32, 178, 173) 120%);
+    background: -moz-linear-gradient(top, rgb(44, 218, 123) 0%, rgb(32, 178, 173) 120%);
+    background: -o-linear-gradient(top, rgb(44, 218, 123) 0%, rgb(32, 178, 173) 120%);
+    background: -ms-linear-gradient(top, rgb(44, 218, 123) 0%, rgb(32, 178, 173) 120%);
+    background: linear-gradient(top, rgb(44, 218, 123) 0%, rgb(32, 178, 173) 120%);
+}
+
+.body--ready .overlay {
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -moz-transition: -moz-transform 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -ms-transition: -ms-transform 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -o-transition: -o-transform 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    transition: transform 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 550px;
+    height: 490px;
+    margin: -260px 0 0 -275px;
+    opacity: 0;
+    -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.overlay--visible {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
+    transform: rotateY(0);
+}
+
+.commands {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    cursor: pointer;
+}
+
+.commands-item {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    background: #fff;
+    margin-top: 1px;
+    color: #333;
+    opacity: .9;
+    -webkit-transition: -webkit-transform 0.7s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -ms-transition: -ms-transform 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    transition: transform 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1), opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+
+.commands-item--gap {
+    margin-top: 9px;
+}
+
+.commands-item:hover {
+    opacity: 1;
+}
+
+.commands-item:hover .commands-item-action {
+    background: #333;
+}
+
+.commands-item a {
+    display: inline-block;
+}
+
+.commands-item-mode {
+    display: inline-block;
+    margin-left: 3px;
+    font-style: italic;
+    color: #ccc;
+}
+
+.commands-item-title {
+    display: inline-block;
+    width: 150px;
+}
+
+.commands-item-info {
+    display: inline-block;
+    width: 300px;
+    font-size: 14px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: normal;
+    color: #aaa;
+}
+
+.commands-item-action {
+    display: inline-block;
+    float: right;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 10px;
+    color: #fff;
+    background: #90c9d1;
+    padding: 5px 10px 4px 10px;
+    border-radius: 3px;
+}
+
+.commands-item:first-child {
+    margin-top: 0;
+}
+
+.twitter-share {
+    position: absolute;
+    top: 4px;
+    right: 20px;
+}
+
+.tabs-labels {
+    margin-bottom: 9px;
+}
+
+.tabs-label {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 2px;
+    -webkit-transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -moz-transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -ms-transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    -o-transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+    transition: opacity 0.1s cubic-bezier(0.694, 0.0482, 0.335, 1);
+}
+
+.tabs-label:hover {
+    opacity: .9;
+}
+
+.tabs-label--active {
+    opacity: .9;
+}
+
+.tabs-panel {
+    display: none;
+}
+
+.tabs-panel--active {
+    display: block;
+}
+
+.tab-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.btn {
+    border-width: 0px;
+    outline: none;
+    background: transparent;
+}
+
+.btnimg {
+    position: relative;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/*以上是atom.js所属的样式表，勿动*/
+
+
+/*下面这个是图片的翻转动画，似乎没啥用了^_^*/
+
+.he_3DFlipY {
+    display: block;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-perspective: 1700px;
+    -moz-perspective: 1700px;
+    perspective: 1700px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%
+}
+
+.he_3DFlipY_inner {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.he_3DFlipY_inner>div.he_3DFlipY_img {
+    backface-visibility: hidden;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.he_3DFlipY_inner:hover>div.he_3DFlipY_img {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.he_3DFlipY_inner>div img {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+    position: relative
+}
+
+.he_3DFlipY_caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background: #fe7253;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    background-color: #000000;
+    text-align: center;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.he_3DFlipY_inner:hover .he_3DFlipY_caption {
+    opacity: 1;
+    -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    transform: rotateY(0)
+}
+
+.he_3DFlipY_caption h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 25%;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+    color: #fff
+}
+
+.he_3DFlipY_caption p {
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 5px;
+    margin: 0;
+    padding: 0;
+    color: #fff
+}
+
+.he_3DFlipY a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.demo {
+    width: 360px;
+    margin: 60px auto 10px auto
+}
+
+@media only screen and (min-width: 420px) {
+    .demo {
+        width: 800px;
+        margin: 60px auto 10px auto
+    }
+}
+
+.box {
+    float: left;
+    width: 380px;
+    height: 260px;
+}
+
+.clear {
+    clear: both
+}
+
+
+/*以下是定时器css样式表*/
+
+.game_time {
+    width: 17%;
+    height: 17%;
+    position: fixed;
+    top: 11%;
+    right: 15%;
+    text-align: center;
+    animation: move 0.5s 1 linear;
+}
+
+
+/* time scroll*/
+
+.pie {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(50, 210, 148, 1);
+    border-radius: 100px;
+    position: absolute;
+}
+
+.pie1 {
+    clip: rect(0px, 200px, 200px, 100px);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    background-color: #fff;
+}
+
+.pie2 {
+    clip: rect(0px, 100px, 200px, 0px);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    background-color: #fff;
+}
+
+.hold {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+
+.bg {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    position: absolute;
+    background-color: rgb(241, 124, 14);
+}
+
+.time {
+    width: 160px;
+    height: 160px;
+    margin: 20px 0 0 20px;
+    background-color: #66BAB7;
+    border-radius: 160px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    line-height: 160px;
+    font-size: 50px;
+}
+
+
+/*以上是定时器css样式表,由timer.js控制*/
+
+.gameButton1 {
+    position: absolute;
+    width: 16%;
+    height: 11%;
+    top: 50%;
+    right: 16%;
+    border-radius: 1.25rem;
+    background: rgba(165, 222, 228, 0.7);
+    animation: move 0.5s 1 linear;
+}
+
+@keyframes move {
+    /*起点省略采用的就是初始状态*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+.gameButton2 {
+    position: absolute;
+    width: 16%;
+    height: 11%;
+    top: 65%;
+    right: 16%;
+    border-radius: 1.25rem;
+    background: rgba(165, 222, 228, 0.7);
+    animation: move 0.5s 1 linear;
+}
+
+@keyframes move {
+    /*起点省略采用的就是初始状态*/
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+
+/*以上那两个蓝色按钮*/
